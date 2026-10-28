@@ -92,18 +92,18 @@ input:focus, textarea:focus, select:focus {
 }
 
 button {
-    background: #8b2500;
+    background: #f1860a;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background: orange;
+    background: rgb(78, 5, 54);
 }
 
 button:active {
-    background: black;
+    background: rgb(219, 221, 84);
 }
 
 /* Tampilan HP */
