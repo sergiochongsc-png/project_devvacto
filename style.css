@@ -1,0 +1,121 @@
+/* Mengatur semua elemen */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #fff8ed;
+}
+
+/* Header dan navbar */
+
+header {
+    background: #8b2500;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+nav {
+    margin-top: 5px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+
+/* Efek saat link disentuh */
+nav a:hover {
+    color: yellow;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #460707;
+    border-radius: 10px;
+}
+
+/* Mengatur teks dan gambar */
+.isi {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Mengatur formulir */
+input, select, textarea, button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+input:focus, textarea:focus, select:focus {
+    border: 2px solid rgb(214, 236, 16);
+}
+
+button {
+    background: #f1860a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(78, 5, 54);
+}
+
+button:active {
+    background: rgb(219, 221, 84);
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+    .isi {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .isi > div > h2{
+        flex-direction: column;
+        font-size: 14px;
+    }
+}
